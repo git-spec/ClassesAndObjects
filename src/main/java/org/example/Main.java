@@ -14,6 +14,8 @@ public class Main {
         System.out.println(Golf_2.getSpeed());
         Golf_2.setSpeed(60);
         System.out.println(Golf_2.getSpeed());
+        Motorcycle Bike = new Motorcycle("FIAT", "bike", 2006, "Ducati", "GT 1000 Classic", "silver");
+        System.out.println(Bike);
         // POLYMORPHISM
         Vehicle[] vehicles = {Plane, Golf_1, Golf_2};
         // Persons
