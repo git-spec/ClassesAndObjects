@@ -7,6 +7,7 @@ public class Car {
     private String model;
     private String color;
     private int year;
+    private int speed;
 
     public Car(String brand, String model, String color, int year) {
         this.brand = brand;
@@ -28,6 +29,9 @@ public class Car {
     public int getYear() {
         return year;
     }
+    public int getSpeed() {
+        return speed;
+    }
 
     // SETTER
     public void setBrand(String brand) {
@@ -41,6 +45,9 @@ public class Car {
     }
     public void setYear(int year) {
         this.year = year;
+    }
+    public void setSpeed(int speed) {
+        this.speed = speed;
     }
 
     @Override
@@ -68,4 +75,6 @@ public class Car {
     public void startCar() {
         System.out.println(this.model + " has been started.");
     }
+
+
 }
