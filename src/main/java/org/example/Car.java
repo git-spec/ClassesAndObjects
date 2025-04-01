@@ -3,10 +3,10 @@ package org.example;
 import java.util.Objects;
 
 public class Car {
-    private String brand;
-    private String model;
+    private final String brand;
+    private final String model;
     private String color;
-    private int year;
+    private final int year;
     private int speed;
 
     public Car(String brand, String model, String color, int year) {
@@ -34,17 +34,8 @@ public class Car {
     }
 
     // SETTER
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
-    public void setModel(String model) {
-        this.model = model;
-    }
     public void setColor(String color) {
         this.color = color;
-    }
-    public void setYear(int year) {
-        this.year = year;
     }
     public void setSpeed(int speed) {
         this.speed = speed;
