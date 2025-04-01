@@ -2,6 +2,9 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
+        // Vehicle
+        Vehicle Plane = new Vehicle("Airbus", "plane", 2024);
+        System.out.println(Plane);
         // Golf 1
         Car Golf_1 = new Car("VW", "car", "VW", "Golf", "black", 2025);
         Golf_1.startCar();

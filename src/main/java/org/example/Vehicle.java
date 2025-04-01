@@ -22,4 +22,13 @@ public class Vehicle {
     public int getYear() {
         return year;
     }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "manufacturer='" + manufacturer + '\'' +
+                ", type='" + type + '\'' +
+                ", year=" + year +
+                '}';
+    }
 }
