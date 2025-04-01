@@ -2,6 +2,8 @@ package org.example;
 
 import java.util.Objects;
 
+
+/** INHERITANCE **/
 public class Car extends Vehicle {
     private final String brand;
     private final String model;
