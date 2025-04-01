@@ -2,32 +2,29 @@ package org.example;
 
 import java.util.Objects;
 
-public class Car {
+public class Car extends Vehicle {
     private final String brand;
     private final String model;
     private String color;
-    private final int year;
     private int speed;
 
-    public Car(String brand, String model, String color, int year) {
-        this.brand = brand;
+    public Car(String manufacturer, String type, String brand, String model, String color, int year) {
+        super(manufacturer, type, year);
         this.model = model;
+        this.brand = brand;
         this.color = color;
-        this.year = year;
     }
 
     // GETTER
     public String getBrand() {
         return brand;
     }
-    public String getModel() {
-        return model;
-    }
+    public String getModel() { return model; }
     public String getColor() {
         return color;
     }
     public int getYear() {
-        return year;
+        return super.getYear();
     }
     public int getSpeed() {
         return speed;
@@ -56,10 +53,12 @@ public class Car {
     @Override
     public String toString() {
         return "Car{" +
+                "manufacturer='" + getManufacturer() + ", " + '\'' +
+                "type='" + getType() + ", " + '\'' +
                 "brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
                 ", color='" + color + '\'' +
-                ", year=" + year +
+                ", year=" + super.getYear() +
                 '}';
     }
 

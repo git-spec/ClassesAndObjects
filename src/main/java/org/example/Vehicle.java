@@ -2,12 +2,24 @@ package org.example;
 
 public class Vehicle {
     private final String manufacturer;
-    private final  String model;
+    private final  String type;
     private final int year;
-    
-    public Vehicle(String manufacturer, String model, int year) {
+
+    public Vehicle(String manufacturer, String type, int year) {
         this.manufacturer = manufacturer;
-        this.model = model;
+        this.type = type;
         this.year = year;
+    }
+
+    public String getManufacturer() {
+        return manufacturer;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public int getYear() {
+        return year;
     }
 }
