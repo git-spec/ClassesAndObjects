@@ -55,9 +55,9 @@ public class Car extends Vehicle {
     @Override
     public String toString() {
         return "Car{" +
-                "manufacturer='" + getManufacturer() + ", " + '\'' +
-                "type='" + getType() + ", " + '\'' +
-                "brand='" + brand + '\'' +
+                "manufacturer='" + getManufacturer() + '\'' +
+                ", type='" + getType() + '\'' +
+                ", brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
                 ", color='" + color + '\'' +
                 ", year=" + super.getYear() +
