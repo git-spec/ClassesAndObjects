@@ -5,6 +5,7 @@ import java.util.Objects;
 
 /** INHERITANCE **/
 public class Car extends Vehicle {
+    static int number;
     private final String brand;
     private final String model;
     private String color;
@@ -15,6 +16,11 @@ public class Car extends Vehicle {
         this.model = model;
         this.brand = brand;
         this.color = color;
+    }
+
+    public static void setNumber(int number) {
+        Car.number += number;
+        Vehicle.setNumber(number);
     }
 
     // GETTER

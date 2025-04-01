@@ -3,6 +3,8 @@ package org.example;
 
 /** COMPOSITION **/
 public class Motorcycle {
+    private static int number;
+    private int instanceNumber;
     private final Vehicle vehicle;
     private final String brand;
     private final String model;
@@ -15,7 +17,26 @@ public class Motorcycle {
         this.color = color;
     }
 
+    public static void setNumber(int number) {
+        Motorcycle.number += number;
+        Vehicle.setNumber(number);
+    }
+
+    public void setInstanceNumber(int number) {
+        instanceNumber = number;
+        Motorcycle.number += number;
+        Vehicle.setNumber(number);
+    }
+
     // GETTER
+    public static int getNumber() {
+        return number;
+    }
+
+    public int getInstanceNumber() {
+        return instanceNumber;
+    }
+
     public String getManufacturer() {
         return vehicle.getManufacturer();
     }

@@ -18,6 +18,14 @@ public class Main {
         System.out.println(Bike);
         // POLYMORPHISM
         Vehicle[] vehicles = {Plane, Golf_1, Golf_2};
+        // Static numbers
+        Car.setNumber(6);
+        System.out.println("Numbers of cars: " + Car.number);
+        Motorcycle.setNumber(2);
+        Bike.setInstanceNumber(1);
+        System.out.println("Numbers of motorcycles: " + Motorcycle.getNumber());
+        System.out.println("Numbers of Ducati: " + Bike.getInstanceNumber());
+        System.out.println("Numbers of vehicles: " + Vehicle.number);
         // Persons
         Person Jack = new Person("Jack", "male", 26);
         Jack.introduce();

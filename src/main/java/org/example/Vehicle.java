@@ -1,6 +1,7 @@
 package org.example;
 
 public class Vehicle {
+    static int number;
     private final String manufacturer;
     private final  String type;
     private final int year;
@@ -9,6 +10,10 @@ public class Vehicle {
         this.manufacturer = manufacturer;
         this.type = type;
         this.year = year;
+    }
+
+    static void setNumber(int number) {
+        Vehicle.number += number;
     }
 
     public String getManufacturer() {
