@@ -36,5 +36,7 @@ public class Main {
         Yumi.introduce();
         Person Mathilde = new Person("Mathilde", "female", 96);
         Mathilde.introduce();
+        /** INTERFACE **/
+        Playable[] playables = {new MusicPlayer(), new VideoPlayer()};
     }
 }
