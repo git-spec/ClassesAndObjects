@@ -2,6 +2,7 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
+        /** INHERITANCE VS COMPOSITION **/
         // Vehicle
         Vehicle Plane = new Vehicle("Airbus", "plane", 2024);
         System.out.println(Plane + "\n");
@@ -38,5 +39,9 @@ public class Main {
         Mathilde.introduce();
         /** INTERFACE **/
         Playable[] playables = {new MusicPlayer(), new VideoPlayer()};
+        MediaController controller = new MediaController();
+        for (Playable playable : playables) {
+            controller.playMedia(playable);
+        }
     }
 }
